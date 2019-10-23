@@ -210,12 +210,13 @@
           variant="danger"
         ></b-progress-bar>
       </b-progress>
-
-      <b-button
-        class="mt-3"
-        @click="randomValue"
-      >Click me</b-button>
       <div class="text-center">
+        <b-button
+          class="mt-3"
+          @click="randomValue"
+        >Click me</b-button>
+      </div>
+      <div class="text-center mt-3">
         <b-spinner label="Spinning"></b-spinner>
         <b-spinner
           type="grow"
@@ -240,6 +241,16 @@
           label="Spinning"
         ></b-spinner>
       </div>
+      <b-pagination-nav
+        number-of-pages="10"
+        base-url="#"
+        first-text="⏮"
+        prev-text="⏪"
+        next-text="⏩"
+        last-text="⏭"
+        class="mt-4"
+        align="center"
+      ></b-pagination-nav>
     </b-container>
   </div>
 </template>
